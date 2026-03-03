@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script defer src="script.js"></script>
+</head>
+
+<body>
+<div id="particles-js"></div>
+
+<nav>
+<h2></h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="resume.html">Resume</a></li>
+</ul>
+
+<button onclick="toggleMode()">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="card" onclick="showProjectDetails('Face Mask Detection', 'Real-time CNN detection system using Python and TensorFlow. The system uses webcam to detect whether a person is wearing a mask or not. It achieves 95% accuracy on the test dataset.')">
+<img src="/images/profile2">
+<h3>Face Mask Detection</h3>
+<p>Real-time CNN detection system.</p>
+</div>
+
+<div class="card" onclick="showProjectDetails('Dual-Stream Semantic Change Detection', 'Advanced deep learning model combining CNN and Transformer architectures for satellite image analysis. Detects changes in aerial imagery with high precision. Published research paper included.')">
+<img src="/images/profile3.jpg">
+<h3>Enhanced Dual-Stream Semantic Change Detection Model</h3>
+<p>CNN + Transformer satellite analysis.</p>
+</div>
+
+</section>
+
+<!-- Modal -->
+<div id="projectModal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">&times;</span>
+<h2 id="modalTitle"></h2>
+<p id="modalDescription"></p>
+</div>
+</div>
+
+</body>
+</html>
